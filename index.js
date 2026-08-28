@@ -1,11 +1,9 @@
-const express = require('express');
+//Pakage Imports
+const app = require('express');
 
-const app = express()
 
-app.get('/', (req, res) => {
-    res.send('WASSUP MANANAP')
-})
-
-app.listen(1234, () => {
-    console.log('Server is running on http://localhost:1234')
-})
+//server set up
+const server = app();
+server.listen(1286, () => {
+    console.log("Server is running...");
+});
